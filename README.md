@@ -6,11 +6,11 @@ And boy it was frustrating...
 I came up with three different solutions, each implementing a different library/toolkit.
 
 ## @zoom-image/angular
-Only recently showed up on [NPM](https://www.npmjs.com/package/@zoom-image/angular), no info or documentation whatsoever a part from a compelte demo on [Stackblitz](https://stackblitz.com/edit/willnguyen1312-zoom-image-x7vadc?file=package.json) , but it works.
+Only recently showed up on [NPM](https://www.npmjs.com/package/@zoom-image/angular), no info or documentation whatsoever a part from a complete demo on [Stackblitz](https://stackblitz.com/edit/willnguyen1312-zoom-image-x7vadc?file=package.json) , but it works.
 
 Some functionalities are specifically made for the web, but the main one (zooming using the wheel of the mouse) supports pinch-zooming on mobile so it does everything I needed.
 
-Yoou just need to install the packages and follow the code on the demo:
+You just need to install the packages and follow the code on the demo:
 
     npm i @zoom-image/angular @zoom-image/core
 
