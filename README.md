@@ -1,6 +1,6 @@
 ﻿# zoom-image-ionic-angular
 This app has been made in Angular 19 and Ionic 8, **completely standalone**.
-I needed to implement an image-zooming funcionality for a project of mine, compatible both with web and mobile devices: so I made some research.
+I needed to implement an image-zooming functionality for a project of mine, compatible both with web and mobile devices: so I made some research.
 And boy it was frustrating...
 
 I came up with three different solutions, each implementing a different library/toolkit.
@@ -8,7 +8,7 @@ I came up with three different solutions, each implementing a different library/
 ## @zoom-image/angular
 Only recently showed up on [NPM](https://www.npmjs.com/package/@zoom-image/angular), no info or documentation whatsoever a part from a compelte demo on [Stackblitz](https://stackblitz.com/edit/willnguyen1312-zoom-image-x7vadc?file=package.json) , but it works.
 
-Some functionalities are specifically made for the web, but the main one (zooming using the wheel of the maouse) supports pinch-zooming on mobile so it does everything I needed.
+Some functionalities are specifically made for the web, but the main one (zooming using the wheel of the mouse) supports pinch-zooming on mobile so it does everything I needed.
 
 Yoou just need to install the packages and follow the code on the demo:
 
