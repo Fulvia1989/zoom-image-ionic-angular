@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>&#64;zoom-image/angular</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+      <ion-segment value="wheel" (ionChange)="handleTabClick($event)">
+        @for(tab of tabs;track tab.value){
+          <ion-segment-button [value]="tab.value">
+            <ion-label>{{tab.name}}</ion-label>
+          </ion-segment-button>
+        }
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  @switch (zoomType) {
+    @case ('wheel') {
+
+      <p>Scroll / Pinch inside the image to see zoom in-out effect</p>
+      <p>Current zoom: {{ getCurrentZoomImageValue() }}</p>
+    
+      <div class="container">
+        <div #imageWheelContainer class="cursor">
+          <img  alt="Large Pic" src="/assets/baloons.jpg" />
+        </div>
+      </div>
+      
+      <div class="buttons">
+        <ion-button (click)="zoomIn()">Zoom in</ion-button>
+        <ion-button (click)="zoomOut()">Zoom out</ion-button>
+        <ion-button (click)="handleCropWheelZoomImage()">Crop Image</ion-button>
+        <ion-button (click)="rotate()">Rotate</ion-button>
+      </div>
+      @if(!!croppedImage){
+    
+        <img [src]="croppedImage"  alt="Cropped placeholder" />
+      }
+    }
+    @case ('hover') {
+      <p>Hover inside the image to see zoom effect</p>
+      <div class="row">
+        <div class="container small">
+          <div #imageHoverContainer class="cursor">
+            <img  alt="Small Pic" src="/assets/baloons.jpg" width="500" height="300"/>
+          </div>
+        </div>
+        <div #zoomTarget class="zoom-target"></div>
+      </div>
+    }
+    @case ('move') {
+      <p>Move mouse inside the image to see zoom effect</p>
+      <div class="container">
+        <div #imageMoveContainer class="cursor">
+          <img  alt="Large Pic" src="/assets/baloons.jpg" />
+        </div>
+      </div>
+    }
+    @case('click'){
+      <p>Click inside the image to see zoom effect</p>
+      <div class="container">
+        <div #imageClickContainer class="cursor">
+          <img alt="Large Pic" src="/assets/baloons.jpg" />
+        </div>
+      </div>
+
+    }
+  }
+
+</ion-content>

@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+
+    &.small{
+        width: 500px;
+        height: 300px;
+    }
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+img{
+    box-sizing: border-box;
+  
+}
+.cursor{
+    cursor: crosshair;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    ion-button{
+        margin-right: 1rem;
+
+    }    
+}

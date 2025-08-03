@@ -1,0 +1,7 @@
+{
+  "name": "image-zoom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
