@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -7,9 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <p>To zoom in/out use the buttons in the toolbar at the bottom of the page.</p>
-      <swiper-container [config]="config" #swiper>
+<ion-content  class="ion-padding">
+  <p>To zoom in/out use the buttons in the toolbar at the bottom of the page (doen not work great on mobile).</p>
+      <swiper-container [config]="config" #swiper [zoom]="true">
         <swiper-slide>
             <div class="swiper-zoom-container">
               <img  class="swiper-zoom-target"  src="/assets/baloons.jpg" alt="Baloons pic">

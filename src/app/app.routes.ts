@@ -19,4 +19,8 @@ export const routes: Routes = [
     path: 'swiperjs',
     loadComponent: () => import('./pages/swiperjs/swiperjs.page').then( m => m.SwiperjsPage)
   },
+  {
+    path: 'hammerjs',
+    loadComponent: () => import('./pages/hammerjs/hammerjs.page').then( m => m.HammerjsPage)
+  },
 ];
