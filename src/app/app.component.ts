@@ -14,7 +14,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/folder/home', icon: 'home' },
     { title: '@zoom-image/angular', url: '/zoom-image', icon: 'heart' },
-    { title: '@swiper', url: '/swiper', icon: 'cloud' },
+    { title: '@swiper', url: '/swiperjs', icon: 'cloud' },
   ];
   constructor() {
     defineAllIcons();
